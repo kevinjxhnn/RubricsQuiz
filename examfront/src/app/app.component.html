@@ -1,0 +1,14 @@
+<!-- loader -->
+<ngx-ui-loader fgsColor="#ffffff" fgsType = "circle" text="Loading..."></ngx-ui-loader>
+
+
+
+
+<!-- blurring content -->
+<div ngxUiLoaderBlurred (blur)="'' + 5">
+    <!-- static navbar -->
+    <app-navbar></app-navbar>
+
+    <!-- dynamic content -->
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,60 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <h3 class="ml20 mt30"><b>{{quiz.title}}</b></h3>
+        <p class="ml20 mb30">{{quiz.description}}</p>
+
+        <div class="row">
+            <div class="col-md-12">
+                <mat-card>
+                    <!-- heading -->
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image mt10"></div>
+                        <mat-card-title class="mt15"><h2>Instructions</h2></mat-card-title>
+                    </mat-card-header>
+
+                    <!-- Instructions -->
+                    <mat-card-content class="mt15">
+
+                        <li>Before beginning the test, ensure that you have read and understood all the instructions provided.  </li><br>
+
+                        <!-- Assummed each question requires 2 mins -->
+                        <li>This quiz has a duration of <b>{{quiz.numberOfQuestions * 2}} minutes</b> . Make sure you manage your time effectively to answer all the questions within the given time frame. </li> <br>
+                        
+                        <li>All questions in this test are in multiple-choice format. Choose the most appropriate answer from the options provided.</li><br>
+
+                        <li>You can attempt the quiz <b>multiple</b> times.</li><br>
+
+                        <li>There are <b>{{quiz.numberOfQuestions}} questions</b> to be answered in this quiz.</li><br>
+
+                        <li>Each questions carries <b>{{quiz.maxMarks / quiz.numberOfQuestions}} marks</b>.</li><br>
+
+                        <li><b>Do not</b> use any unauthorized materials, such as textbooks, notes, or electronic devices, unless explicitly permitted by the test instructions.  </li><br>
+                        
+                        <li>There is no negative marking for incorrect answers. If you are unsure about a question, it is better to make an educated guess rather than leaving it unanswered.</li><br>
+
+                        <li> Scroll down to move to the next question. </li><br>
+
+                        <li> You <b>can not</b> resume this quiz, if interrupted due to any reason.</li><br>
+
+                        <li> The timer will start <b>as soon as</b> you click on the 'Start Test' button.</li><br>
+
+                        <li> Click on the 'Submit Quiz' button on completion of the quiz.</li><br>
+
+                        <li> Report of the test is automatically generated in the form of PDF on completion of the test.</li><br>
+
+
+                    </mat-card-content>
+
+                    <!-- Actions -->
+                    
+                        <div class="container" (click)="startQuiz()" class="text-center mt10 mb20">
+                            <button mat-raised-button color="warn">Start Quiz</button>
+                        </div>
+                    
+                </mat-card>
+
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<mat-card class="mt30">
+
+    <mat-action-list>
+
+        <div matListItemLine> Menu </div>
+
+        <!-- Donate -->
+        <button mat-list-item routerLink="/user-dashboard/donate">
+            <mat-icon matListItemIcon>emoji_food_beverage</mat-icon> Buy us coffee!
+        </button>
+
+        <!-- Profile -->
+        <button routerLink="/user-dashboard/profile" mat-list-item>
+            <mat-icon matListItemIcon>account_circle</mat-icon> Your Profile
+        </button>
+
+        <!-- View All Quiz -->
+        <button mat-list-item routerLink="/user-dashboard/0">
+            <mat-icon matListItemIcon>density_small</mat-icon> All Quizzes
+        </button>
+
+
+        <!-- Categories -->
+        <button [routerLink]="'/user-dashboard/' + c.cId" mat-list-item *ngFor="let c of categories">
+            <mat-icon matListItemIcon>quiz</mat-icon> {{c.title}}
+        </button>
+        
+
+
+    </mat-action-list>
+
+</mat-card>
+

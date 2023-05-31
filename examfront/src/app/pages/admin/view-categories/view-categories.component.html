@@ -1,0 +1,60 @@
+<!-- <mat-card class="mt10">
+
+    <mat-card>
+
+        <h2 mat-subheader class="ml20 mt20"> All Categories </h2>
+
+        <mat-list-item *ngFor="let c of categories">
+
+            <mat-icon matListItemIcon> edit_square </mat-icon>
+
+            <h3 matListItemTitle>{{c.title}}</h3>
+
+            <p matListItemLine>
+                <span>{{c.description}}</span>
+            </p>
+
+
+            <mat-divider></mat-divider>
+
+        </mat-list-item>
+
+       
+
+    </mat-card>
+
+    <div class="container text-center mt20 mb30">
+        
+        <button 
+        routerLink="/admin/add-category"
+        mat-raised-button color="warn">+ Add New Category</button>
+
+    </div>
+
+</mat-card> -->
+
+<!-- testing -->
+
+<h2 class="ml20 mt30">All Categories</h2>
+
+<mat-card class="mt10 mr20" *ngFor="let c of categories"> 
+
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="mb10"> {{c.title}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        {{c.description}}
+      </p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <!-- Delete Category -->
+      <button mat-icon-button (click)="deleteCategory(c.cId)" class="mt20"><mat-icon>delete</mat-icon></button>
+    </mat-card-actions>
+
+   
+
+</mat-card>

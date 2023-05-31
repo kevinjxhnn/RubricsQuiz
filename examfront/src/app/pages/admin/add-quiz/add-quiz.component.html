@@ -1,0 +1,105 @@
+<mat-card class="mt30">
+    <h2 class="ml20 mt30">Add New Quiz</h2>
+    
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="row">
+                <div class="col-md-10">
+                    <form (ngSubmit)="addQuiz()">
+                        
+                        <!-- Title field -->
+                        <mat-form-field class="w100" appearance="outline">
+            
+                            <mat-label>Title</mat-label>
+            
+                            <input 
+                            [(ngModel)]="quizData.title"
+                            required
+                            autofocus
+                            type="text" name="title" 
+                            matInput 
+                            placeholder="Please enter the title here"/>
+                            
+                        </mat-form-field> 
+
+                        <!-- Description field -->
+                        <mat-form-field class="w100" appearance="outline">
+            
+                            <mat-label>Description</mat-label>
+            
+                            <textarea 
+                            [(ngModel)]="quizData.description"
+                            name="description" 
+                            matInput 
+                            placeholder="Please enter the description here" 
+                            rows="3"></textarea>
+            
+                        </mat-form-field>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Max marks field -->
+                                <mat-form-field class="w100" appearance="outline">
+
+                                    <mat-label>Max Marks</mat-label>
+            
+                                    <input 
+                                    [(ngModel)]="quizData.maxMarks"
+                                    required
+                                    autofocus
+                                    type="text" name="maxMarks" 
+                                    matInput 
+                                    placeholder="Maximum marks possible in number format"/>
+
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- Number of Questions field -->
+                                <mat-form-field class="w100" appearance="outline">
+
+                                    <mat-label>Number of Questions</mat-label>
+            
+                                    <input 
+                                    [(ngModel)]="quizData.numberOfQuestions"
+                                    required
+                                    autofocus
+                                    type="text" name="numberOfQuestions" 
+                                    matInput 
+                                    placeholder="Count of questions in number format"/>
+
+                                </mat-form-field>
+                                
+                            </div>
+                        </div>
+    
+                        <!-- Category Select -->
+                        <mat-form-field class="w100" appearance="fill">
+                            <mat-label>Category</mat-label>
+                            <mat-select name="category" [(ngModel)]="quizData.category.cId">
+                              <mat-option *ngFor="let c of categories" [value]="c.cId">
+                                {{c.title}}
+                              </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <br/>
+                        <!-- Active Switch -->
+                        <mat-slide-toggle 
+                        name="active"
+                        class="mr10"
+                        [(ngModel)]="quizData.active">Enable Quiz</mat-slide-toggle>
+
+                        <!-- Add Quiz button -->
+                        <div class="container text-center">
+                            <button mat-raised-button class="mt10 mb10" color="warn" type="submit">+ Add New Quiz</button>
+
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+

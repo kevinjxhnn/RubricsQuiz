@@ -1,0 +1,55 @@
+<div class="bootstrap-wrapper">
+
+    <div class="container-fluid">
+        <h2 class="ml20 mt30">Available Quizzes</h2>
+
+        <div class="row" *ngIf="quizzes">
+            
+            <div class="col-md-6" *ngFor="let q of quizzes">
+
+                <mat-card>
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title class="truncate mb10"> {{q.title}}</mat-card-title>
+                        <mat-card-subtitle class="truncate mb10">{{q.category.title}}</mat-card-subtitle>
+                    </mat-card-header>
+                
+                    <mat-card-content>
+                      <p class="truncate mt10">
+                        {{q.description}}
+                      </p>
+                    </mat-card-content>
+
+                    <mat-card-actions class="mb10 mt30">
+
+                      
+
+                        <!-- Start -->
+                        <button mat-raised-button class="ml10" [routerLink]="'/user-dashboard/instructions/' + q.qid" color="warn">Start Quiz</button>
+                        
+
+                        <!-- Display Max Marks -->
+                        <button mat-button disabled class="ml20">Max Marks: {{q.maxMarks}}</button>
+
+                        <!-- Display Question Count -->
+                        <button mat-button disabled class="ml10">Count: {{q.numberOfQuestions}}</button>
+                   
+                        
+                      </mat-card-actions>
+
+                </mat-card>
+
+            </div>
+
+            <div class="col-md-12" *ngIf="quizzes.length==0">
+              <mat-card>
+                <div class="container text-center mb20">
+                  <img mat-card-image class="mt10" src="../../../../assets/error.png" height="150">
+                  <mat-card-content>
+                    <h3>No Quiz in this Category</h3>
+                  </mat-card-content>
+                </div>
+              </mat-card>
+            </div>
+    </div>
+</div>

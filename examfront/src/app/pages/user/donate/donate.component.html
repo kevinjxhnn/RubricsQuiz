@@ -1,0 +1,82 @@
+
+
+<mat-card class="mt30">
+    
+
+    <h1 class="text-center mb20 mt20 text">Buy us coffee!</h1>
+    <!-- {{user | json}} -->
+    <mat-card-content>
+        
+        <div class="bootstrap-wrapper">
+
+            <div class="container text-center">
+
+                <div class="container mt20">
+                    
+                    <img src="../../../../assets/star.png"
+                    class="profile-image"/>
+                    
+                    <h1 class="mt10 mb20">
+                        <span style="color: #212121">
+                            
+                        </span></h1>
+
+                </div>
+           
+               
+     
+
+            </div>
+
+        </div>
+        <mat-card class="mt20 mb20">
+            <mat-card-content>
+
+                <p class="text-center mt30 mb30">
+                    Want to spread some positivity and show some appreciation for your
+                    teachers for their hard work? Consider buying them a coffee as a small gesture 
+                    of thanks!<br><br>
+                    It's a great way to acknowledge their efforts and make them feel valued!
+        
+                </p>
+
+            </mat-card-content>
+            
+
+        </mat-card>
+
+
+    </mat-card-content>
+
+    <div class="container text-center">
+        <div class="row mt20">
+
+            <div class="col-md-9">
+    
+                <!-- Payment field Field -->
+                <mat-form-field class="w100 ml20" appearance="fill">
+                    <mat-label>
+                        Donate
+                    </mat-label>
+    
+                    <input placeholder="Enter any amount" id="payment_field" type="text" matInput/>
+    
+                </mat-form-field>
+                
+    
+    
+            </div>
+    
+            <div class="col-md-3">
+                
+
+                <!-- Donate button -->
+                <button (click)="paymentStart()" mat-raised-button class="mt10"  color="accent">Pay</button>
+            </div>
+    
+        </div>
+    </div>
+
+
+
+</mat-card>

@@ -1,0 +1,43 @@
+<!-- <p>this is my navbar</p> -->
+<mat-toolbar color="primary">
+    <a 
+    routerLink="/"
+    mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+     <mat-icon>auto_stories</mat-icon>
+    </a>
+   <span>Rubrics</span>
+   <span class="example-spacer"></span>
+   <a 
+   *ngIf="!isLoggedIn"
+   routerLink="/login"
+   mat-raised-button class="mr10">
+   Login
+    </a>
+
+   <a 
+   *ngIf="!isLoggedIn"
+   routerLink="/signup"
+   mat-raised-button color="warn">
+   Register
+</a>
+
+<button
+
+   *ngIf="isLoggedIn && user"
+   class="mr10"
+   mat-raised-button 
+   >
+   {{user.username}}
+   <!-- Profile -->
+   
+</button>
+
+<a 
+(click)="logout()"
+   *ngIf="isLoggedIn"
+   mat-raised-button color="warn">
+   Logout
+</a>
+    
+  
+</mat-toolbar>

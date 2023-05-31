@@ -1,0 +1,10 @@
+.example-header-image {
+    background-image: url("../../../../assets/main-idea.png");
+    background-size: cover;
+  }
+  
+  .ml5{
+    margin-left: 5px !important;
+  }
+
+  

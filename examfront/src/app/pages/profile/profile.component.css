@@ -1,0 +1,33 @@
+.profile-image{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.table{
+    width: 100%;
+    /* border: .5px solid #e2e2e2;
+    border-collapse: collapse; */
+    margin-left: 70px;
+    
+}
+
+.table tr td{
+    padding: 10px; 
+    padding-left: 50px;
+}
+
+.table-button{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.text{
+    font-weight: 500;
+}
+

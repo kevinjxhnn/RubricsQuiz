@@ -1,0 +1,70 @@
+<mat-card *ngIf="user" class="mt30">
+    <h2 class="text-center text mb20 mt20">Your Profile</h2>
+    <!-- {{user | json}} -->
+    <mat-card-content>
+        
+        <div class="bootstrap-wrapper">
+
+            <div class="container text-center">
+
+                <div class="container">
+                    
+                    <img src="../../../assets/default.jpg"
+                    class="profile-image"/>
+                    
+                    <h1 class="text mt10 mb20">
+                        <span style="color: #212121">
+                            {{user.firstName}} {{user.lastName}}
+                        </span></h1>
+
+                </div>
+                <mat-card class="mt20 mb20">
+                <div class="row" >
+
+                    <div class="col-md-10 offest-md-1" >
+                       
+                        <!-- table details -->
+                        <table class="table text-center mt10 mb10">
+
+
+                            <tr>
+                                <td><span style="color: #212121"><b>Username</b></span></td>
+                                <td>{{user.username}}</td>
+                            </tr>
+
+                            <tr>
+                                <td><span style="color: #212121"><b>User Id</b></span></td>
+                                <td>RUBRIC{{user.id}}</td>
+                            </tr>
+                            <tr>
+                                <td><span style="color: #212121"><b>Phone</b></span></td>
+                                <td>{{user.phoneNo}}</td>
+                            </tr>
+
+                            <tr>
+                                <td><span style="color: #212121"><b>Role</b></span></td>
+                                <td>{{user.authorities[0].authority}}</td>
+                            </tr>
+
+                            <tr>
+                                <td><span style="color: #212121"><b>Status</b></span></td>
+                                <td>{{user.enabled? "ACTIVE":"DEACTIVATED"}}</td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+            </mat-card>
+
+            </div>
+
+        </div>
+
+    </mat-card-content>
+
+    
+
+    
+
+</mat-card>
