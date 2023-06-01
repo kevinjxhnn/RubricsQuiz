@@ -135,7 +135,7 @@ export class DonateComponent implements OnInit{
         headers: {'Authorization': `Bearer ${this.token}`},
     
         success:function(response){
-          Swal.fire('Success!', 'Your payment was successfull', 'success');
+          Swal.fire('Success!', 'Your payment was successful', 'success');
         },
         
         error: function(error){
