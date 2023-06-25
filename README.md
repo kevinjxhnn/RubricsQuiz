@@ -8,7 +8,7 @@ Normal users can take quizzes, view scores, and even show appreciation to the ad
 Admins have additional privileges such as creating and modifying categories, quizzes, and questions, managing quiz availability, and deleting content.
 
 ### ⚠️ Important Notice! 
-You can view the project on __rubricsquiz.in__.If it fails to load, please don't hesitate to reach out to me at kevinjxhn.dev@gmail.com or via my linkedin. I will be able to assist you by restarting the server hosted on AWS.
+You can view the project on __rubricsquiz.in__. If it fails to load, please don't hesitate to reach out to me at kevinjxhn.dev@gmail.com or via my linkedin. I will be able to assist you by restarting the server hosted on AWS.
 
 ## ✨Features
 
