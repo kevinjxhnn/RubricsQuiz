@@ -9,7 +9,7 @@ Admins have additional privileges such as creating and modifying categories, qui
 
 ## ✨Features
 
-### Admin Features
+### 👨‍🏫 Admin Features
 Category Management: Admins have the ability to create categories to group different types of quizzes. They can easily add new categories or remove existing ones as needed.
 
 #### Category Creation:
@@ -22,9 +22,11 @@ Admins can create quizzes within the portal. They can specify the quiz title, se
 Within each quiz, admins can add questions along with multiple answer options. They can mark the correct answer for each question, ensuring accurate evaluation of user responses.
 
 #### Quiz and Question Management: 
-Admins have the authority to modify or delete quizzes and questions. They can remove entire quizzes or specific questions within a quiz, providing flexibility for customization and content updates.
+Admins have the authority to modify or delete quizzes and questions. They can remove entire quizzes or specific questions within a quiz, providing flexibility for customization and content updates. 
 
-### Normal User Features
+
+
+### 🙋‍♂️ Normal User Features
 Normal users can access quizzes that have been made active by admins. They can view the list of categories which have the available quizzes and select the desired one to begin the quiz-taking process.
 
 #### Quiz Taking: 
@@ -44,8 +46,9 @@ If you prefer to set up the project locally, you can download the necessary file
 
 To access the admin features, log in using the following credentials:
 
-_Username_: kevinjxhn \
-_Password_: abc
+ _Username_: kevinjxhn \
+ _Password_: abc
+
 
 For normal users, you have the option to register for an account. Once registered, you can log in using your credentials to access the normal user functionality.
 
