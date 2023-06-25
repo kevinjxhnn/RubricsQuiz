@@ -38,16 +38,14 @@ Normal users have the opportunity to express their appreciation to the hardworki
 
 
 # 🚨Getting Started
-You can view and access the Rubrics Quiz Portal by visiting rubricsquiz.in. However, in case the website doesn't load or you encounter any issues, please feel free to reach out to me at kevinjxhn.dev@gmail.com. I will be able to assist you promptly by restarting the server hosted on AWS.
+You can view and access the Rubrics Quiz Portal by visiting __rubricsquiz.in__. However, in case the website doesn't load or you encounter any issues, please feel free to reach out to me at kevinjxhn.dev@gmail.com. I will be able to assist you promptly by restarting the server hosted on AWS.
 
 If you prefer to set up the project locally, you can download the necessary files from the repository. Keep in mind that you will need to configure a SQL server, as the project utilizes MySQL to store data in the backend. Make sure to follow the provided documentation for setting up the database and configuring the required connections.
 
 To access the admin features, log in using the following credentials:
 
-##### Username: kevinjxhn
-
-Password: abc 
-
+_Username_: kevinjxhn \
+_Password_: abc
 
 For normal users, you have the option to register for an account. Once registered, you can log in using your credentials to access the normal user functionality.
 
