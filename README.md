@@ -44,8 +44,11 @@ If you prefer to set up the project locally, you can download the necessary file
 
 To access the admin features, log in using the following credentials:
 
-Username: kevinjxhn
-Password: abc
+##### Username: kevinjxhn
+
+Password: abc 
+
+
 For normal users, you have the option to register for an account. Once registered, you can log in using your credentials to access the normal user functionality.
 
 Thank you for your interest in the Rubrics Quiz Portal. Feel free to explore, take quizzes, and enjoy the learning experience!
